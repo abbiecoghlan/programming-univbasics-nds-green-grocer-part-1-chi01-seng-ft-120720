@@ -17,7 +17,7 @@ def consolidate_cart(cart)
   
   cart.each do |item_hash|
   
-    item_hash.each do |key, value|
+    item_hash.dup.each do |key, value|
    
 
       if consolidated_cart.include?(item_hash[:item])
