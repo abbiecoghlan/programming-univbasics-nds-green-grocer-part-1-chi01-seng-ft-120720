@@ -13,6 +13,8 @@ def consolidate_cart(cart)
   
 
   
+
+  
   cart.each do |item_hash|
     item_hash.each do
 
