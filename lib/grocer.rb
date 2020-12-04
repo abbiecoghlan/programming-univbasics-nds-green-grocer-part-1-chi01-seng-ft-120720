@@ -20,7 +20,7 @@ def consolidate_cart(cart)
     item_hash.dup.each do |key, value|
    
 
-      if consolidated_cart.include?(item_hash[:item])
+      if consolidated_cart.include?(item_hash)
         binding.pry
           consolidated_cart[consolidated_cart.length-1][item_hash][:count] += 1
       
