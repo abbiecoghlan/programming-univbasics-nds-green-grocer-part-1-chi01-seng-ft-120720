@@ -27,6 +27,7 @@ def consolidate_cart(cart)
       binding.pry
       
       elsif !consolidated_cart.include?(item_hash[:item])
+      binding.pry
         item_hash[:count] = 1
         consolidated_cart << item_hash
       end
