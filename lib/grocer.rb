@@ -14,7 +14,7 @@ def consolidate_cart(cart)
   
 
   
-  cart.each do |item_hash|
+  cart.dup.each do |item_hash|
     item_hash.each do
 
       if find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == nil
