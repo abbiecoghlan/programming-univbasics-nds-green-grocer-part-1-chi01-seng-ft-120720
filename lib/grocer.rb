@@ -26,7 +26,7 @@ def consolidate_cart(cart)
       elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == true
         consolidated_cart[item_hash][:count] += 1
         
-      end 
+      end  
     end
   end    
       
