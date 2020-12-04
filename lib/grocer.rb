@@ -24,8 +24,7 @@ def consolidate_cart(cart)
         consolidated_cart << item_hash
      
 
-      elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == !nil
-        binding.pry
+      else
         consolidated_cart[item_hash][:count] += 1
        
         
