@@ -10,12 +10,12 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
-  
+
+  consolidated_cart = []
   
 
   
   cart.each do |item_hash|
-    consolidated_cart = []
     item_hash.each do
 
       if find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == nil
