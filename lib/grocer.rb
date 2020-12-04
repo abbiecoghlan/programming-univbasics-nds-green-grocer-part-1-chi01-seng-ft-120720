@@ -19,9 +19,8 @@ def consolidate_cart(cart)
     item_hash[:count] = 1
     item_hash.dup.each do |key, value|
     
-      if consolidated_cart.include? item_hash
-        [key] == true
-    
+
+      if consolidated_cart.include? item_hash == true
         consolidated_cart[item_hash][:count] += 1
 
       else
