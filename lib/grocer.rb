@@ -19,6 +19,7 @@ def consolidate_cart(cart)
     item_hash.dup.each do
 
       if consolidated_cart.include? item_hash == true
+        binding.pry
         consolidated_cart[item_hash][:count] += 1
 
       else
