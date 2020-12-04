@@ -26,8 +26,10 @@ def consolidate_cart(cart)
 
       elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == !nil
           consolidated_cart.each do |updated_item_hash|
-            updated_item_hash[:count] += 1
-       
+            if updated_item_hash == item_hash
+                updated_item_hash[:count] += 1
+            end
+          end
         
       end  
     end
