@@ -1,3 +1,4 @@
+
 def find_item_by_name_in_collection(name, collection)
   collection.each do |item_hash|
     if item_hash[:item] == name
