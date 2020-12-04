@@ -23,7 +23,7 @@ def consolidate_cart(cart)
         consolidated_cart[item_hash][:count] += 1
 
       else
-        binding.pry
+
         item_hash[:count] = 1
 
         consolidated_cart << item_hash
