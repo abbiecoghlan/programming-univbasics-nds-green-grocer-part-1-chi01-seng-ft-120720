@@ -1,5 +1,3 @@
-require "pry"
-
 def find_item_by_name_in_collection(name, collection)
   collection.each do |item_hash|
     if item_hash[:item] == name
@@ -29,7 +27,7 @@ def consolidate_cart(cart)
       end  
     end
   end    
-      
+  consolidated_cart
 
 end
 
