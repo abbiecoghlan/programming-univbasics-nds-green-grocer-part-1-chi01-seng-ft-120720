@@ -21,12 +21,12 @@ def consolidate_cart(cart)
    
 
       if consolidated_cart.include?(item_hash)
-        
+        binding.pry
         consolidated_cart.each do |cart_hash|
           cart_hash[:count] += 1
         end
-      else
-
+      elsif
+        binding.pry
         consolidated_cart << item_hash
       end
   
