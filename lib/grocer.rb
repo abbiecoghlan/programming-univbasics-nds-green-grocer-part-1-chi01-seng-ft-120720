@@ -21,7 +21,7 @@ def consolidate_cart(cart)
       if consolidated_cart.include? item_hash == true
         consolidated_cart[item_hash][:count] += 1
 
-      else consolidated_cart.include? item_hash == false
+      else
         item_hash[:count] = 1
 
         consolidated_cart << item_hash
