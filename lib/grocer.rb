@@ -25,7 +25,7 @@ def consolidate_cart(cart)
         binding.pry
       
 
-      elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == true
+      elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == !nil
         binding.pry
         consolidated_cart[item_hash][:count] += 1
         binding.pry
