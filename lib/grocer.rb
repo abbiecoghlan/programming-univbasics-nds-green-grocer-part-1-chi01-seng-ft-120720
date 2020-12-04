@@ -30,6 +30,7 @@ def consolidate_cart(cart)
             cart_hash[:count] += 1
           end
         end
+
       elsif !consolidated_cart.include?(item_hash)
         item_hash[:count] = 1
         consolidated_cart << item_hash
