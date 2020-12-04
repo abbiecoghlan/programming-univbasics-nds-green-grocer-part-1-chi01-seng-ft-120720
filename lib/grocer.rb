@@ -8,32 +8,20 @@ def find_item_by_name_in_collection(name, collection)
   return nil
 end
 
+
 def consolidate_cart(cart)
 
   consolidated_cart = []
   
-  
-
-  
   cart.each do |item_hash|
-  
-    
-   
+    if consolidated_cart.include?(item_hash)
+        consolidated_cart[consolidated_cart.length-1][:count] += 1
 
-      if consolidated_cart.include?(item_hash)
-      
-          consolidated_cart[consolidated_cart.length-1][:count] += 1
-      
-      
-      elsif !consolidated_cart.include?(item_hash[:item])
-   
+    elsif !consolidated_cart.include?(item_hash[:item])
         item_hash[:count] = 1
         consolidated_cart << item_hash
-      end
-  
-  
+    end
   end    
-
 end
 
 
