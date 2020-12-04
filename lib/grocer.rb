@@ -8,13 +8,13 @@ def find_item_by_name_in_collection(name, collection)
   return nil
 end
 
+
+
 def consolidate_cart(cart)
 
   consolidated_cart = []
   
-  
 
-  
   cart.each_with_object do |item_hash|
     item_hash.dup.each do
 
