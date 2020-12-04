@@ -16,7 +16,7 @@ def consolidate_cart(cart)
   cart.each do |item_hash|
     if consolidated_cart.include?(item_hash)
       
-        consolidated_cart[consolidated_cart.length-1][:count] += 1
+        consolidated_cart[consolidated_cart.index(item_hash)][:count] += 1
 
     elsif !consolidated_cart.include?(item_hash[:item])
         item_hash[:count] = 1
