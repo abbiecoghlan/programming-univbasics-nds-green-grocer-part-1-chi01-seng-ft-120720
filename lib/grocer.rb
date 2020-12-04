@@ -17,13 +17,13 @@ def consolidate_cart(cart)
   
   cart.each do |item_hash|
     item_hash.dup.each do
-      if consolidated_cart.include? item_hash == false 
+      if consolidated_cart.include? item_hash == false
         item_hash[:count] = 1
 
         consolidated_cart << item_hash
      
 
-      elsif find_item_by_name_in_collection(item_hash[:item], consolidated_cart) == !nil
+      elsif consolidated_cart.include? item_hash == true
         binding.pry
           consolidated_cart.each do |updated_item_hash|
             if updated_item_hash == item_hash
