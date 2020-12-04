@@ -18,7 +18,7 @@ def consolidate_cart(cart)
   cart.each do |item_hash|
     item_hash[:count] = 1
     item_hash.dup.each do |key, value|
-    binding.pry
+    
 
       if item_hash == find_item_by_name_in_collection(item_hash[:item], consolidated_cart) 
         consolidated_cart[item_hash][:count] += 1
