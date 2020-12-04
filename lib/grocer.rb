@@ -28,8 +28,7 @@ def consolidate_cart(cart)
       else
         binding.pry
         consolidated_cart << item_hash
-     
-     end
+      end
   
     end
   end    
